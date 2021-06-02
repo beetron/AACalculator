@@ -9,7 +9,7 @@
         ResizeMode="CanResize"
         Icon="/Images/64x64.ico"
         Background="Black"
-        Title="BiToro's AA Calculator"
+        Title="AA Calculator by BiToro"
         Topmost ="True"
         Height="500" Width="320">
 
