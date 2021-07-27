@@ -47,7 +47,7 @@
             <StackPanel Grid.Column="1">
                 <TextBlock Text="びとろのAA計算機" Foreground="GreenYellow" FontSize="16" FontWeight="Bold"
                            TextAlignment="Right" />
-                <TextBlock Text="v.1.1a" Foreground="White" FontSize="12" TextAlignment="Right" />
+                <TextBlock Text="v.1.2" Foreground="White" FontSize="12" TextAlignment="Right" />
             </StackPanel>
         </Grid>
 
