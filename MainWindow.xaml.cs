@@ -176,6 +176,8 @@ namespace AACookBook
             //this.matName.Text = Convert.ToString(cC);
             //this.matCount.Text = Convert.ToString(aC);
 
+            //Cooking recipe            
+
             if (cC != 0)
             {
                 if (CookBox.SelectedIndex == 0) //if (CookBox.Text == "ハッスルパン")
@@ -260,7 +262,7 @@ namespace AACookBook
                 }
             }
 
-
+            // Alchemy recipe
             if (aC > 0)
             {
                 if (AlchBox.SelectedIndex == 0)
@@ -403,6 +405,7 @@ namespace AACookBook
             alchCombo.SelectedIndex = 0;
         }
 
+        // Skill level selector
         private void skillBoxLoaded(object sender, RoutedEventArgs e)
         {
             List<string> skillLevel = new List<string>();
@@ -419,18 +422,7 @@ namespace AACookBook
             skillCombo.SelectedIndex = 0;
         }
 
-        // private void CheckBox_OnChecked(object sender, RoutedEventArgs e)
-        // {
-        //     if (checkBox.IsChecked == true)
-        //     {
-        //         this.Topmost = true;
-        //     }
-        //     else if (checkBox.IsChecked == false)
-        //     {
-        //         this.Topmost = false;
-        //     }
-        // }
-
+        // Window always on top
         private void CheckBox_OnClick(object sender, RoutedEventArgs e)
         {
             if (checkBox.IsChecked == true)
