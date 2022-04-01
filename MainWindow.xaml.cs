@@ -41,6 +41,16 @@ namespace AACookBook
         // Calculate Button Click
         private void ButtonCalculate_OnClick(object sender, RoutedEventArgs e)
         {
+            // If count is empty, sets the value to 0 to prevent exception error
+            if(String.IsNullOrEmpty(this.CookCount.Text))
+            {
+                this.CookCount.Text = "0";
+            }
+            if(String.IsNullOrEmpty(this.AlchCount.Text))
+            {
+                this.AlchCount.Text="0";
+            }
+
             var cC = Convert.ToInt32(CookCount.Text);
             var aC = Convert.ToInt32(AlchCount.Text);
 
@@ -178,7 +188,7 @@ namespace AACookBook
 
             //Cooking recipe            
 
-            if (cC != 0)
+            if (cC > 0)
             {
                 if (CookBox.SelectedIndex == 0) //if (CookBox.Text == "ハッスルパン")
                 {

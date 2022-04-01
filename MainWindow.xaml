@@ -47,7 +47,7 @@
             <StackPanel Grid.Column="1">
                 <TextBlock Text="ArcheAge計算機" Foreground="Black" FontSize="16" FontWeight="Bold"
                            TextAlignment="Right" />
-                    <TextBlock Text="by びとろ(v.1.2)" Foreground="DarkBlue" FontSize="12" TextAlignment="Right" />
+                    <TextBlock Text="by びとろ(v.1.2.1)" Foreground="DarkBlue" FontSize="12" TextAlignment="Right" />
             </StackPanel>
         </Grid>
 
