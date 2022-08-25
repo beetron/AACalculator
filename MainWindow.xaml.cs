@@ -9,9 +9,7 @@ using System.Windows.Input;
 
 namespace AACookBook
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : INotifyPropertyChanged
     {
         public MainWindow()

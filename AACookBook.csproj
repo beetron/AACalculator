@@ -169,5 +169,8 @@
   <ItemGroup>
     <Resource Include="Images\header image3.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Bitoro_logo_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
