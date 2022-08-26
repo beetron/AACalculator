@@ -51,7 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Images\64x64.ico</ApplicationIcon>
+    <ApplicationIcon>Images\128x128.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>472F96FB90CA30578BBF82B74AA73A70477A7DB3</ManifestCertificateThumbprint>
@@ -106,7 +106,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MatsCalculate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -135,21 +134,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\" />
-    <Folder Include="Fonts\" />
-    <Folder Include="MVVM\Model\" />
-    <Folder Include="MVVM\ViewModel\" />
-    <Folder Include="MVVM\View\" />
-    <Folder Include="Theme\" />
+    <Resource Include="Images\128x128.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\header image.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\header image2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Notes1.txt" />
+    <Resource Include="notes.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -164,13 +152,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\64x64.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\header image3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Bitoro_logo_icon.png" />
+    <Resource Include="Images\header image4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         WindowState="Normal"
         ResizeMode="CanMinimize"
-        Icon="/Images/64x64.ico"
+        Icon="/Images/128x128.ico"
         Background="Black"
         Title="AA Calculator by BiToro"
         Topmost ="True"
@@ -23,19 +23,17 @@
 
         <StackPanel>
             
-            <!--<StackPanel.Background>
-                 <ImageBrush ImageSource="Images/Bitoro_logo_icon.png" Opacity="0.2" ></ImageBrush> 
-            </StackPanel.Background>-->
+            <StackPanel.Background>
+                 <ImageBrush ImageSource="Images/header image4.jpg" Opacity="1" ></ImageBrush> 
+            </StackPanel.Background>
             
-            <!-- Image and Title -->
+<!-- Title/Header-->
         <Grid Margin="3" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <!-- <Image Grid.Column="0" Source="/Images/window.ico" Width="96" Height="96" Margin="-10,-6,63,6" />
-            -->
             <CheckBox x:Name ="checkBox" Grid.Column="0" IsChecked ="True" Click="CheckBox_OnClick" >
             </CheckBox>
             <StackPanel Grid.Column="0">
@@ -49,7 +47,7 @@
             <StackPanel Grid.Column="1">
                 <TextBlock Text="ArcheAge計算機" Foreground="Black" FontSize="16" FontWeight="Bold"
                            TextAlignment="Right" />
-                    <TextBlock Text="by びとろ(v.1.2.1)" Foreground="DarkBlue" FontSize="12" TextAlignment="Right" />
+                    <TextBlock Text="by びとろ(v.1.2.2)" Foreground="DarkBlue" FontSize="12" TextAlignment="Right" />
             </StackPanel>
         </Grid>
 
@@ -67,7 +65,7 @@
                          BorderThickness="0" FontSize="15" Foreground="Red" IsReadOnly="True" Text="0" />
             </Grid>
         
-            <!-- Label Cooking + Count -->
+<!-- Label Cooking + Count -->
         <Grid Margin ="8,0,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -79,7 +77,7 @@
                            Margin="15,0,0,0" />
             </Grid>
 
-        <!-- Cooking Combbox & Count TextBox -->
+<!-- Cooking Combobox & Count TextBox -->
         <Grid Margin="8,0,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -87,7 +85,6 @@
             </Grid.ColumnDefinitions>
             <ComboBox 
                 Loaded = "CookBox_Loaded"
-                SelectionChanged = "CookBox_SelectionChanged"
                 Height="25" SelectedIndex="0" FontSize="11" x:Name="CookBox" Grid.Column="0" IsReadOnly="True">
             </ComboBox>
             
@@ -97,7 +94,7 @@
             </TextBox>
             </Grid>
 
-            <!-- Label Alchemy + Count -->
+<!-- Label Alchemy + Count -->
             <Grid Margin="8,0,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -109,7 +106,7 @@
                            Margin="15,0,0,0" />
             </Grid>
 
-            <!-- Alchemy Combox & Count TextBox -->
+<!-- Alchemy Combobox & Count TextBox -->
             <Grid Margin="8,0,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -125,7 +122,7 @@
                 </TextBox>
             </Grid>
 
-            <!-- Buttons -->
+<!-- Buttons -->
         <Grid Margin="8,10,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -138,11 +135,14 @@
                         Cursor="Hand" FontFamily="Arial" Margin="0" FontSize="14">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Background="{TemplateBinding Background}" x:Name="border">
+                            <Border
+                                CornerRadius="5"
+                                Background="{TemplateBinding Background}" 
+                                x:Name="border">
                                 <ContentPresenter />
                             </Border>
                             <ControlTemplate.Triggers>
-                                <!-- ボタンを押すと色が変わる -->
+                                <!-- Change color while button is pressed -->
                                 <Trigger Property="IsPressed" Value="True">
                                     <Setter Property="Background" Value="#FF6AB3FF" TargetName="border" />
                                 </Trigger>
@@ -159,11 +159,14 @@
                     Cursor="Hand" FontFamily="Arial"  Margin="5,0,0,0" FontSize="14">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Background="{TemplateBinding Background}" x:Name="border">
+                            <Border 
+                                CornerRadius="5"
+                                Background="{TemplateBinding Background}" 
+                                x:Name="border">
                                 <ContentPresenter />
                             </Border>
                             <ControlTemplate.Triggers>
-                                <!-- ボタンを押すと色が変わる -->
+                                <!-- Change color while button is pressed -->
                                 <Trigger Property="IsPressed" Value="True">
                                     <Setter Property="Background" Value="#6AB3FF" TargetName="border" />
                                 </Trigger>
@@ -176,7 +179,7 @@
                 </Button>
         </Grid>
 
-        <!-- Cooking TextBox Dataload -->
+<!-- Cooking TextBox Dataload -->
         <Grid Margin="0,15,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="3*" />
@@ -209,7 +212,7 @@
             </TextBox>
             </Grid>
 
-            <!-- Alchemy TextBox Dataload -->
+<!-- Alchemy TextBox Dataload -->
             <Grid Margin ="0,15,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="3*" />
@@ -240,19 +243,6 @@
                     Grid.Column="1" Margin="10,0,0,0">
                 </TextBox>
             </Grid>
-            <Canvas
-                Grid.Row="0"
-                Grid.RowSpan="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="3">
-                <Image
-                    Name="Img_Data"
-                    Canvas.Top="120"
-                    Canvas.Left="5"
-                    Source="Images/Bitoro_logo_icon.png"
-                    Width="85"
-                    Height="85" />
-            </Canvas>
         </StackPanel>
     </Border>
 </Window>
