@@ -9,3 +9,9 @@ ArcheAge recipe calculator
 
 Needs fixing:
 - Labor calculation is off, unsure of the exact percentage based on the player's skill level
+
+Code Lang / Framework:
+- c#
+- .NET Framework, WPF, XAML
+
+<img src="https://btro.net/aa/images/AAcalc-screenshot.png" alt="ArcheAge Calculator">
