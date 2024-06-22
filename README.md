@@ -1,6 +1,7 @@
 # AACalculator
 
 Latest release: 1.2.2 [Download zip](https://btro.net/aa/files/Bitoro_AACalc_v1.2.2.zip)
+Tested OS: Windows 10
 
 Language(s): Japanese
 
